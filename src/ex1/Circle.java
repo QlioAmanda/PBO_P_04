@@ -14,6 +14,7 @@ public class Circle {
         this.color = "red";
     }
 
+    // Task 1.1: constructor radius + color
     public Circle(double r, String color) {
         this.radius = r;
         this.color = color;
@@ -21,10 +22,14 @@ public class Circle {
 
     public double getRadius() { return radius; }
     public void setRadius(double r) { this.radius = r; }
+
+    // Task 1.1: getter & setter color
     public String getColor() { return color; }
     public void setColor(String color) { this.color = color; }
 
-    public double getArea() { return Math.PI * radius * radius; }
+    public double getArea() {
+        return Math.PI * radius * radius;
+    }
 
     @Override
     public String toString() {

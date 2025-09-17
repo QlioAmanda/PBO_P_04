@@ -25,19 +25,18 @@ public class Cylinder extends Circle {
 
     public double getHeight() { return height; }
 
+    // Task 1.2: override getArea → surface area
     @Override
     public double getArea() {
         return 2 * Math.PI * getRadius() * height + 2 * super.getArea();
     }
 
+    // Task 1.2: fix volume
     public double getVolume() {
-        return super.getArea() * height;
+        return super.getArea() * height; // pakai area lingkaran dari Circle
     }
 
-    public double getBaseArea() {
-        return super.getArea();
-    }
-
+    // Task 1.3: toString pakai super
     @Override
     public String toString() {
         return "Cylinder: subclass of " + super.toString() + ", height=" + height;
